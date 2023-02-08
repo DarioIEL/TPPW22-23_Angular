@@ -8,8 +8,9 @@ Guida comandi Base
 npm install -g @angular/cli
 
 ## Nuova App
+```
 ng new mia-app
-
+```
 ## Run App
 Nella cartella principale dell'applicazione (dentro mia-app)
 ```
