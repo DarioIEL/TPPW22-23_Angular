@@ -5,7 +5,9 @@ Guida comandi Base
 - Npm (installato con Node)
 
 ## Installazione Angular CLI
+```
 npm install -g @angular/cli
+```
 
 ## Nuova App
 ```
