@@ -1,0 +1,20 @@
+<p>Primo Component funziona</p>
+<p>Id Component: {{id}}</p>
+<p>Nome Component: {{nome}}</p>
+<p>Status Component : {{status}}</p>
+
+<hr>
+
+<p>Status colorato</p>
+
+<!-- Tutto quello che inserisco nelle parentesi quadre e che comincia con ng si chiamano DIRECTIVES  -->
+<p>Staus Component con ngStyle <span [ngStyle] = "{'background-color': getColore()}"> {{status}} </span></p>
+
+<p>Status Component con ngClass 
+    <span [ngClass] = "{textGreen: status === 'Online', textRed: status === 'Offline'}">
+        {{status}}
+    </span>
+</p>
+
+
+
