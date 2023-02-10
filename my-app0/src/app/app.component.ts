@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
 
 //AppComponent è il nome della classe. Il component è una classe
 export class AppComponent {
+
   //proprietà di classe
    title = 'Prima App di Angular';
   //  author = "Dario";
@@ -18,5 +19,7 @@ export class AppComponent {
     materia: "Angular",
     presenza: true
   }
+
+  lezione: string = "Seconda lezione di Angular";
 
 }

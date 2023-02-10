@@ -1,0 +1,33 @@
+<h2>Terzo Component</h2>
+<!-- metto un pulsante con la condizione -->
+<!-- Property Binding, una prop legata al valore di una var -->
+<h3>Property Binding</h3>
+<button [disabled]="!allowClick">Crea server</button>
+
+<p>Abilitazione creazione server: {{allowClick}} </p>
+
+
+<h3>Event Binding</h3>
+<button class="btn"
+  [disabled]="!allowClick"
+  (click)="onCreateNewServer()">Crea</button>
+
+  <p>{{nomeServer}} - {{statusServer}}</p>
+
+<h2>Lista dei server</h2>
+
+<!-- *ngFor direttiva. * rappresenta la direttiva che manipola il dom -->
+<ul *ngFor="let mioServer of servers;">
+  <li>{{mioServer}}</li>
+</ul>
+
+<!-- *ngIf -->
+<h3 *ngIf="serverCreated; else serverNOTCreated">
+  Questo h3 viene mostrato solo se serverCreated è true
+</h3>
+
+<!-- con # identifico una Local Reference -->
+<ng-template #serverNOTCreated>
+  <h3>Non è ancora stato creato nessun server</h3>
+</ng-template>
+
