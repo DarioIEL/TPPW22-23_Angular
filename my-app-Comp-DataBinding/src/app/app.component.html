@@ -1,0 +1,60 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-6">
+      <app-cockpit></app-cockpit>
+    </div>
+
+    <div class="col-6">
+      <!-- serversElements è l'array creato nel app.component.ts
+      mioSingoloServer è la variabile del for of
+    elemento è la custom property che app-server riceverà in input DEFINITA IN APP-SERVER-->
+
+      <app-server *ngFor="let mioSingoloServer of serversElements" [elemento] = "mioSingoloServer" ></app-server>
+
+    </div>
+
+  </div>
+
+  <div class="container">
+      <div class="row">
+      <div class="col-6">
+
+        <h2>Titoli dei miei libri preferiti</h2>
+        <app-libro *ngFor="let libro of libri" [aliasLibro] = "libro" ></app-libro>
+      </div>
+
+      <div class="col-6">
+        <div class="mb-3">
+          <label for="" class="form-label">Titolo</label>
+          <input type="text"
+            class="form-control"
+            [(ngModel)]="titolo">
+          </div>
+          <div class="mb-3">
+            <label for="" class="form-label">Autore</label>
+            <input type="text"
+              class="form-control"
+              [(ngModel)]="autore">
+            </div>
+            <div class="mb-3">
+              <label for="" class="form-label">Prezzo</label>
+              <input type="number"
+                class="form-control"
+                [(ngModel)]="prezzo">
+              </div>
+          <div class="mb-3">
+            <button class="btn btn-primary" (click)="onInsertNewLibro()" >Inserisci</button>
+          </div>
+
+          {{titolo}}
+      </div>
+
+
+    </div>
+  </div>
+
+</div>
+
+
+

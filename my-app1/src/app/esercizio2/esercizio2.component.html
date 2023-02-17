@@ -1,0 +1,37 @@
+<h2>Esercizio Elenco Studenti</h2>
+
+<div class="row justify-content-start align-items-center g-2">
+  <div class="col-4">
+    <input type="text" class="form-control"
+    [(ngModel)]="nomeStudente"
+    (keypress)="onRegistraNomi($event)">
+
+  </div>
+  <div class="col-1">
+    <button type="button"
+    class="btn btn-primary"
+    (click)="onRegistraNomi()">Aggiungi</button>
+  </div>
+
+  <div class="col-6">
+    <h6>Quello che sto scrivendo:</h6>
+    <p>{{nomeStudente}}</p>
+  </div>
+
+</div>
+
+<!-- qui mostrerò l'elenco studenti -->
+<div class="col-6" *ngIf="elencoStudenti.length != 0; else noElenco ">
+    <h6>Questo è l'elenco studenti</h6>
+    <ul>
+      <li *ngFor="let studente of elencoStudenti">
+        {{studente}}
+      </li>
+    </ul>
+</div>
+
+<ng-template #noElenco>
+  <div class="col-6">
+    <h6>Non hai ancora nessuno studente</h6>
+  </div>
+</ng-template>

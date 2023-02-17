@@ -1,0 +1,30 @@
+<h2>Esercizio</h2>
+
+<div class="container">
+  <div class="row">
+    <div class="col-6">
+      <button (click)="mostraDettagli()" class="btn btn-primary">Mostra dettagli</button>
+    </div>
+
+    <div class="col-6">
+      {{dettagli}}
+      <!-- Local reference #noDettagli -->
+    </div>
+
+    <div *ngIf="log.length != 0; else noDettagli " class="col-12">
+      <h4>Questi sono i log del mostra dettagli</h4>
+      <ul>
+        <li *ngFor="let singleLog of mostraLog()">
+          {{singleLog}}
+        </li>
+      </ul>
+    </div>
+
+    <ng-template #noDettagli>
+      <p>Non ci sono ancora i log dei dettagli </p>
+    </ng-template>
+
+
+
+  </div>
+</div>
