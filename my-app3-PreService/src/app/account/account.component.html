@@ -1,0 +1,11 @@
+<!-- Questo è il singolo Component -->
+<!-- Nome - Stauts btn1(Active) btn2(InActive) btn3(Hidden) -->
+<li class="list-group-item">
+  <p>{{mioAccount.nome}} - {{mioAccount.status}} -
+    <button class="btn btn-primary" (click)="onSetStatus('Active')" >Active</button>
+    <button class="btn btn-warning" (click)="onSetStatus('Inactive')">Inactive</button>
+    <button class="btn btn-default" (click)="onSetStatus('Hidden')">Hidden</button>
+  </p>
+
+
+</li>

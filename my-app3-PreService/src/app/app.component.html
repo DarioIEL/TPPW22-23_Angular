@@ -1,0 +1,20 @@
+<div class="container">
+
+  <div class="row">
+    <div class="col-4">
+      <app-new-account (accountAggiunto)="onAggiungiAccount($event)"></app-new-account>
+    </div>
+  </div>
+
+  <div class="row">
+    <ul class="list-group list-group-flush">
+
+      <app-account
+        *ngFor="let account of listaAccount; let i = index"
+        [mioAccount] = "account"
+        [id] = "i"
+        (statusChanged) = "onChangeStatus($event)">
+      </app-account>
+    </ul>
+  </div>
+</div>
