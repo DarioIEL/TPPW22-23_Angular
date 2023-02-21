@@ -3,7 +3,7 @@ export class Server{
   descrizione: String;
   tipo?: String;
 
-  constructor(nome: string, descrizione: string, tipo?: string){
+  constructor(nome: String, descrizione: String, tipo?: String){
     this.nome = nome;
     this.descrizione = descrizione;
     this.tipo = tipo;

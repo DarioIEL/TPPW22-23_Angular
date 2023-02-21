@@ -26,7 +26,7 @@ export class AppComponent {
   libri: Libro[] = [
     new Libro("Dune", "Adams", 2),
     new Libro("Guida Galattica", "Adams", 4),
-    new Libro("Harry Potter", "Rowlings", 1),
+    new Libro("Harry Potter", "Rowling", 1),
     new Libro("Fiori Blu", "Quenoe", 5)
   ]
 
@@ -36,5 +36,9 @@ export class AppComponent {
 
   onInsertNewLibro(){
     this.libri.push(new Libro(this.titolo, this.autore, this.prezzo));
+  }
+
+  onAddNewServer(nuovoServer: Server){
+    this.serversElements.push(nuovoServer);
   }
 }

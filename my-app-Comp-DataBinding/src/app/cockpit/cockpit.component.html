@@ -1,1 +1,14 @@
-<p>cockpit works!</p>
+<div class="mb-3">
+
+  <label for="" class="form-label">Nome Server</label>
+  <input type="text" class="form-control" [(ngModel)]="nomeServer">
+
+  <label for="" class="form-label">Descrizione</label>
+  <input type="text" class="form-control" [(ngModel)]="descrizioneServer">
+
+  <label for="" class="form-label">Tipo</label>
+  <input type="text" class="form-control" [(ngModel)]="tipoServer">
+
+  <button class="btn btn-primary" (click)="onAddServer()">Crea</button>
+
+</div>
