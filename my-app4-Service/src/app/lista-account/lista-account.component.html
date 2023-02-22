@@ -1,0 +1,16 @@
+<!-- <ul>
+  <li *ngFor="let account of accounts; let i = index">
+    Nome: {{account.nome}} - Status {{account.status}}
+    <button class="btn btn-primary" (click)="onChangeStatus(i, 'Admin')">Admin</button>
+    <button class="btn btn-warning" (click)="onChangeStatus(i, 'Base')">Base</button>
+    <button class="btn btn-danger" (click)="onChangeStatus(i, 'Hidden')">Hidden</button>
+  </li>
+</ul> -->
+
+<ul>
+  <li *ngFor="let account of accounts; let i = index">
+    <app-account
+    [account] = "account"
+    [indice] = "i"></app-account>
+  </li>
+</ul>

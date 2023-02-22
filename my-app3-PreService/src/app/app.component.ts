@@ -25,4 +25,11 @@ export class AppComponent {
     console.log(nuoveInfo);
     this.listaAccount[nuoveInfo.id].status = nuoveInfo.newStatus;
   }
+
+  nomeRicevutoOutput: string;
+
+  onRegistraNome(nomeRicevuto: string){
+    console.log(nomeRicevuto);
+    this.nomeRicevutoOutput = nomeRicevuto;
+  }
 }

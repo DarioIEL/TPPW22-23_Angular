@@ -1,0 +1,28 @@
+<div class="row">
+  <div class="col-md-6 col-md-offset-3">
+    <div class="form-group">
+        <div class="mb-3">
+          <label for="" class="form-label">Nome</label>
+          <input type="text"
+            class="form-control"
+            [(ngModel)]="nomeAccount">
+        </div>
+
+
+        <div class="mb-3">
+          <label for="" class="form-label">Status</label>
+          <select class="form-select form-select-lg"
+          [(ngModel)]="statusAccount">
+            <option selected>Seleziona</option>
+            <option value="Admin">Admin</option>
+            <option value="Base">Base</option>
+            <option value="Hidden">Hidden</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <button (click)="onAggiungiAccount()" class="btn btn-primary" >Aggiungi</button>
+        </div>
+    </div>
+  </div>
+</div>

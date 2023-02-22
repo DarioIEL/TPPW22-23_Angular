@@ -1,0 +1,33 @@
+
+<p>Clicca sul pulsante per scrivere qualcosa in console</p>
+
+<button (click)="onScrivi()">Clicca</button>
+
+{{saluto}}
+
+<br>
+
+<h2>Lista Utenti</h2>
+<ul>
+  <li *ngFor="let utente of utenti">
+    {{utente.nome}} - {{utente.cognome}} - {{utente.tipo}}
+  </li>
+</ul>
+
+
+<hr>
+
+<h3>Clicca per aggiungere paperino</h3>
+<button (click)="onAggiungiUtente()">Clicca per aggiungere</button>
+
+<hr>
+
+
+<h1>Esercizio Account con i service</h1>
+
+<app-new-account></app-new-account>
+<app-lista-account></app-lista-account>
+
+
+
+

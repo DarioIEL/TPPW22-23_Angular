@@ -18,3 +18,13 @@
     </ul>
   </div>
 </div>
+
+
+<div class="container">
+  <h2>Esercizio per @Output()</h2>
+
+  <app-esercizio (nomeUtente)="onRegistraNome($event)" ></app-esercizio>
+
+  <p>Il mio nome: {{nomeRicevutoOutput}}</p>
+
+</div>
