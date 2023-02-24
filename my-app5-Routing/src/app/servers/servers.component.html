@@ -1,0 +1,25 @@
+
+<!--
+Crea un Component Service, crea una servizio Service nel quale ci sarà un metodo getServerById(id: number) che restituisce un server. Nel service ci sarà un array di server (id: number, name: string).
+
+Il service component deve essere simile a Users, quindi al click sul link mostra un server utilizzando le routing. -->
+
+<div class="row">
+  <div class="col-md-6">
+    <div class="list-group">
+      <a class="list-group-item"
+      [routerLink]="[]"
+      *ngFor="let server of servers">
+      {{server.name}}
+    </a>
+    </div>
+  </div>
+
+  <div class="col-6">
+    Dettagli singolo server:
+
+    <!-- Qui dentro renderizzo i component figli, quelli nested -->
+    <!-- <router-outlet></router-outlet> -->
+
+  </div>
+</div>
