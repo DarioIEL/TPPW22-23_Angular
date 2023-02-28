@@ -1,0 +1,24 @@
+{
+  "utenti": [
+    {
+      "id": 1,
+      "nome": "Gennarello",
+      "role": "Admin"
+    },
+    {
+      "id": 2,
+      "nome": "Annarella",
+      "role": "Base"
+    },
+    {
+      "id": 3,
+      "nome": "Paola",
+      "role": "Admin"
+    },
+    {
+      "id": 4,
+      "nome": "Dario",
+      "role": "Base"
+    }
+  ]
+}

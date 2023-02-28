@@ -1,0 +1,12 @@
+
+
+<ul>
+  <li *ngFor="let utente of utenti">
+    {{utente.id}} - {{utente.nome}} - {{utente.role}}
+  </li>
+</ul>
+
+
+<div class="">
+  <button class="btn" (click)="onPostData()">CaricaUtente</button>
+</div>
